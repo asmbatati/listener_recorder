@@ -13,8 +13,8 @@ class PoseStampedCSVWriter(Node):
 
         # Prepare header for csv
         self.header = ['timestamp', 'tx', 'ty', 'tz', 'qx', 'qy', 'qz', 'qw']
-        # Open file in append mode as csvfile
-        self.csvfile = open('pose_data.csv', 'a', newline='')
+        # Open file in append mode as csvfile and save it in the recordings folder
+        self.csvfile = open('/home/user/shared_volume/ros2_ws/src/listener_recorder/recordings/R1_df.csv', 'a', newline='')
         self.writer = csv.writer(self.csvfile)
         # Write header to csv file
         self.writer.writerow(self.header)

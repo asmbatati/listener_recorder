@@ -3,9 +3,9 @@
 <package format="3">
   <name>listener_recorder</name>
   <version>0.0.0</version>
-  <description>TODO: Package description</description>
-  <maintainer email="user@todo.todo">user</maintainer>
-  <license>TODO: License declaration</license>
+  <description>Recorder of ROS messages to CSV dataframe</description>
+  <maintainer email="asmalbatati@hotmail.com">Abdulrahman S. Al-Batati</maintainer>
+  <license>MIT</license>
 
   <depend>rclpy</depend>
   <depend>std_msgs</depend>
@@ -24,6 +24,8 @@
   <depend>launch</depend>
   <depend>launch_testing</depend>
   <depend>launch_testing_ros</depend>
+
+  <exec_depend>ros2launch</exec_depend>
 
   <test_depend>ament_copyright</test_depend>
   <test_depend>ament_flake8</test_depend>
